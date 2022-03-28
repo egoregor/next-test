@@ -1,4 +1,3 @@
-import Link from "next/Link"
 import Head from 'next/head'
 import $ from "jquery";
 import {useEffect, Fragment} from "react";
@@ -87,15 +86,11 @@ export default function Index() {
         <div className="container">
           <header>
             <h1>
-              <Link href={"/"}>
-                <a>
-                  <svg width="320" height="150">
-                    <text fill="white" fillOpacity="0" textAnchor="middle" letterSpacing="10" fontSize="100" x="160"
-                          y="75" stroke="white">ERZ
-                    </text>
-                  </svg>
-                </a>
-              </Link>
+              <svg width="320" height="150">
+                <text fill="white" fillOpacity="0" textAnchor="middle" letterSpacing="10" fontSize="100" x="160"
+                      y="75" stroke="white">ERZ
+                </text>
+              </svg>
             </h1>
           </header>
           <div className="bgContainer">
