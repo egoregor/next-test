@@ -6,10 +6,11 @@ export default function Index() {
 
   useEffect(() => {
     let step = 1;
-    let maxSteps = 5;
+    let maxSteps = $(".textContainer").length;
     let isStepChanging = false;
     let isScrolled = false;
     var timeout;
+    console.log(maxSteps)
 
 
     $(window).on('wheel', function(e){
