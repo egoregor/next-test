@@ -1,10 +1,13 @@
 import Head from 'next/head'
 import $ from "jquery";
 import {useEffect, Fragment} from "react";
+import TagManager from 'react-gtm-module';
 
 export default function Index() {
 
   useEffect(() => {
+    TagManager.initialize({ gtmId: 'GTM-KGF3TRN' });
+
     let step = 1;
     let maxSteps = $(".textContainer").length;
     let isStepChanging = false;
