@@ -168,7 +168,7 @@ export default function Index() {
           </div>
         </div>
         <Script
-            src="https://www.googletagmanager.com/gtag/js?id=UA-30870468-0"
+            src="https://www.googletagmanager.com/gtag/js?id=GTM-KGF3TRN"
             strategy="afterInteractive"
         />
         <Script strategy="afterInteractive" src="https://www.googleoptimize.com/optimize.js?id=OPT-WDH4SH3"></Script>
