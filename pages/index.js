@@ -88,6 +88,11 @@ export default function Index() {
                 integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
                 crossOrigin="anonymous" referrerpolicy="no-referrer" />
         </Head>
+        <Script strategy="beforeInteractive" src="https://www.googleoptimize.com/optimize.js?id=OPT-WDH4SH3"></Script>
+        <Script
+            src="https://www.googletagmanager.com/gtag/js?id=G-4SSE521NYX"
+            strategy="afterInteractive"
+        />
         <div className="container">
           <header>
             <h1>
@@ -167,11 +172,6 @@ export default function Index() {
             <div className="stepCircle stepCircle-5" />
           </div>
         </div>
-        <Script
-            src="https://www.googletagmanager.com/gtag/js?id=GTM-KGF3TRN"
-            strategy="afterInteractive"
-        />
-        <Script strategy="afterInteractive" src="https://www.googleoptimize.com/optimize.js?id=OPT-WDH4SH3"></Script>
       </Fragment>
   )
 }
