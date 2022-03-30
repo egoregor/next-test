@@ -91,7 +91,7 @@ export default function Index() {
         <Script strategy="beforeInteractive" src="https://www.googleoptimize.com/optimize.js?id=OPT-WDH4SH3"></Script>
         <Script
             src="https://www.googletagmanager.com/gtag/js?id=G-4SSE521NYX"
-            strategy="afterInteractive"
+            strategy="beforeInteractive"
         />
         <div className="container">
           <header>
@@ -170,6 +170,12 @@ export default function Index() {
             <div className="stepCircle stepCircle-3" />
             <div className="stepCircle stepCircle-4" />
             <div className="stepCircle stepCircle-5" />
+          </div>
+          <div className="socialAbsolute">
+              <div className="social"><i className="fa-brands fa-discord" /></div>
+              <div className="social"><i className="fa-brands fa-twitter" /></div>
+              <div className="social"><i className="fa-brands fa-youtube" /></div>
+              <div className="social"><i className="fa-brands fa-telegram" /></div>
           </div>
         </div>
       </Fragment>
