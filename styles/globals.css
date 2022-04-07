@@ -165,18 +165,6 @@ header h1 {
 .stepCircle-active {
   background-color: rgba(255,255,255,1);
 }
-.socialAbsolute {
-  position: fixed;
-  bottom: 50px;
-  right: 50px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.socialAbsolute .social {
-  margin: 0 10px;
-  color: white;
-}
 @media (max-width: 800px) {
   .stepContent {
     position: relative;

@@ -1,20 +1,16 @@
+import Link from "next/Link"
 import Head from 'next/head'
 import $ from "jquery";
 import {useEffect, Fragment} from "react";
-import TagManager from 'react-gtm-module';
-import Script from "next/script";
 
 export default function Index() {
 
   useEffect(() => {
-    TagManager.initialize({ gtmId: 'GTM-KGF3TRN' });
-
     let step = 1;
-    let maxSteps = $(".textContainer").length;
+    let maxSteps = 5;
     let isStepChanging = false;
     let isScrolled = false;
     var timeout;
-    console.log(maxSteps)
 
 
     $(window).on('wheel', function(e){
@@ -88,19 +84,18 @@ export default function Index() {
                 integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
                 crossOrigin="anonymous" referrerpolicy="no-referrer" />
         </Head>
-        <Script strategy="beforeInteractive" src="https://www.googleoptimize.com/optimize.js?id=OPT-WDH4SH3"></Script>
-        <Script
-            src="https://www.googletagmanager.com/gtag/js?id=G-4SSE521NYX"
-            strategy="beforeInteractive"
-        />
         <div className="container">
           <header>
             <h1>
-              <svg width="320" height="150">
-                <text fill="white" fillOpacity="0" textAnchor="middle" letterSpacing="10" fontSize="100" x="160"
-                      y="75" stroke="white">ERZ
-                </text>
-              </svg>
+              <Link href={"/"}>
+                <a>
+                  <svg width="320" height="150">
+                    <text fill="white" fillOpacity="0" textAnchor="middle" letterSpacing="10" fontSize="100" x="160"
+                          y="75" stroke="white">ERZ
+                    </text>
+                  </svg>
+                </a>
+              </Link>
             </h1>
           </header>
           <div className="bgContainer">
@@ -170,12 +165,6 @@ export default function Index() {
             <div className="stepCircle stepCircle-3" />
             <div className="stepCircle stepCircle-4" />
             <div className="stepCircle stepCircle-5" />
-          </div>
-          <div className="socialAbsolute">
-              <div className="social"><i className="fa-brands fa-discord" /></div>
-              <div className="social"><i className="fa-brands fa-twitter" /></div>
-              <div className="social"><i className="fa-brands fa-youtube" /></div>
-              <div className="social"><i className="fa-brands fa-telegram" /></div>
           </div>
         </div>
       </Fragment>
